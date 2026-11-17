@@ -14,25 +14,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::InteractableAudio
   pickupHealthAudio:
     Guid:
-      Data1: 840128861
-      Data2: 1150844911
-      Data3: 133387664
-      Data4: 1905517334
-    Path: event:/Test
+      Data1: -720945928
+      Data2: 1255898980
+      Data3: 1338602386
+      Data4: -1571360777
+    Path: event:/Interactables/Int_Heal_Pickup
   boxDestroyAudio:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 2066171018
+      Data2: 1213929982
+      Data3: 1819344828
+      Data4: -1883086776
+    Path: event:/Interactables/Int_Destrucible_Box_Test
   switchAudio:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: -1966037886
+      Data2: 1138178116
+      Data3: -1460882002
+      Data4: -1039535194
+    Path: event:/Interactables/Int_Switch
   doorAudio:
     Guid:
       Data1: 0
