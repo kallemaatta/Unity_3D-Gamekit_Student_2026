@@ -40,6 +40,7 @@ namespace Gamekit3D.GameCommands
         {
             activate = true;
             if (OnStartCommand != null) OnStartCommand.Send();
+            Debug.Log("Start");
         }
 
         public void FixedUpdate()
@@ -86,6 +87,7 @@ namespace Gamekit3D.GameCommands
                 enabled = false;
                 if (OnStopCommand != null) OnStopCommand.Send();
                 direction *= -1;
+                Debug.Log("Stop");
             }
         }
     }
