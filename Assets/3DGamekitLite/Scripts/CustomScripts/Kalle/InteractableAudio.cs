@@ -22,4 +22,18 @@ public class InteractableAudio : ScriptableObject
     {
         RuntimeManager.PlayOneShot(switchAudio, objectTransform.position);
     }
+
+    public EventInstance DoorOpen(EventInstance eventInstance, GameObject obj)
+    {
+        eventInstance = RuntimeManager.CreateInstance(doorAudio);
+        RuntimeManager.AttachInstanceToGameObject(eventInstance, obj, obj.GetComponent<Rigidbody>());
+        eventInstance.start();
+        return eventInstance;
+    }
+
+    public void DoorClose(EventInstance eventInstance)
+    {
+        eventInstance.keyOff();
+        eventInstance.release();
+    }
 }

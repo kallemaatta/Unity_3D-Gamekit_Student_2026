@@ -1,4 +1,8 @@
+using System;
 using UnityEngine;
+using FMOD.Studio;
+using FMODUnity;
+
 
 namespace Gamekit3D.GameCommands
 {
@@ -27,7 +31,22 @@ namespace Gamekit3D.GameCommands
         float direction = 1f;
 
         protected Platform m_Platform;
-        
+
+        private EventInstance eventInstance;
+        public InteractableAudio interactableAudio;
+
+        private void Update()
+        {
+            if (interactableAudio != null && Input.GetKeyDown(KeyCode.Alpha0))
+            {
+                eventInstance = interactableAudio.DoorOpen(eventInstance, gameObject);
+            }
+
+            if (interactableAudio != null && Input.GetKeyDown(KeyCode.Alpha1))
+            {
+                interactableAudio.DoorClose(eventInstance);
+            }
+        }
 
         protected override void Awake()
         {
