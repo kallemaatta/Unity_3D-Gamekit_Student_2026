@@ -21,11 +21,11 @@ MonoBehaviour:
     Path: event:/Interactables/Int_Heal_Pickup
   boxDestroyAudio:
     Guid:
-      Data1: 2066171018
-      Data2: 1213929982
-      Data3: 1819344828
-      Data4: -1883086776
-    Path: event:/Interactables/Int_Destrucible_Box_Test
+      Data1: 609608266
+      Data2: 1176126693
+      Data3: -1239307889
+      Data4: -45264599
+    Path: event:/Interactables/Int_Destructible_Box
   switchAudio:
     Guid:
       Data1: -1966037886
